@@ -62,9 +62,9 @@ ${win}：${win_speed_day}
   // 最高温度
   if (+tem1 <= 3) {
     description += `
-哈喽哈喽~这里是来自崽崽的爱心提醒哦：
+哈喽哈喽~这里是来自五长的爱心提醒：
 今日最高温度仅为🥶 ${tem1}℃，可冷可冷了~
-鱼崽崽可要注意保暖哦~\n`
+可要注意保暖哦~\n`
   }
 
   //   if (air_tips) {
@@ -79,9 +79,9 @@ ${win}：${win_speed_day}
 
   // 内容末尾，自定义
   description += `
-  [ 点我有惊喜 ] ❤️ 🧡 💛 💚 💖`
+  [ 点我有惊喜💖 ] `
 
-  const title = `这是我们相识的第 ${dateLength} 天`
+  const title = `早上好😆`
 
   return {
     msgtype: 'textcard',
@@ -91,7 +91,7 @@ ${win}：${win_speed_day}
       //   url: 'https://api.lovelive.tools/api/SweetNothings',
       //   url: 'https://v1.jinrishici.com/all.svg',
       url: 'https://api.vvhan.com/api/60s', // 60s看世界
-      btntxt: 'By崽崽',
+      btntxt: '五长',
     },
   }
 }

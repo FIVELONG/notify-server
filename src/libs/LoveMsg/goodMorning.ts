@@ -39,7 +39,7 @@ const goodWord = async() => {
     const template = textTemplate(data)
     console.log('goodWord', template)
 
-    wxNotify(template)
+    // wxNotify(template)
   }
   catch (error) {
     console.log('goodWord:err', error)

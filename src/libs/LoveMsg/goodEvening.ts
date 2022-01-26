@@ -83,13 +83,13 @@ const getNews = async() => {
 const getStory = async() => {
   const res = await API.getStorybook()
   const template = {
-    msgtype: 'text',
-    text: {
-      content: `今日份睡前故事来喽：
-🌑🌒🌓🌔🌕🌝😛\n
-『${res.title}』
-${res.content}`,
-    },
+    msgtype: 'miniprogram_notice',
+    miniprogram_notice: {
+        "appid": "wx25e33117af151cf6",
+        "page": "pages/tab/tab",
+        "title": "不要忘记记录今天的开支哦~",
+        "description": "嘻嘻"
+    }
   }
 
   await wxNotify(template)
@@ -98,5 +98,4 @@ ${res.content}`,
 // 执行函数
 export const goodEvening = async() => {
   await getStory()
-  await getNews()
 }
